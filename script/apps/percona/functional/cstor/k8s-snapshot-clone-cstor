@@ -5,7 +5,7 @@ set -x
 ## ENVIRONMENT ##
 #################
 
-## https://github.com/openebs/litmus/blob/master/apps/percona/functional/k8s_snapshot/test_vars.yml
+## https://github.com/openebs/litmus/blob/master/experiments/functional/k8s_snapshot/test_vars.yml
 run_id="cstor";test_name=$(${utils_path}/generate_test_name testcase=create-k8s-snapshot-clone metadata=${run_id})
 
 ###################
@@ -16,7 +16,7 @@ ${utils_path}/setup_dependencies litmus-test
 
 ## Clone the litmus repo, navigate to litmus root 
 
-git clone https://github.com/openebs/litmus.git
+git clone https://github.com/litmuschaos/litmus.git
 cd litmus
 
 ############################
